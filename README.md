@@ -36,7 +36,7 @@ push-all/
 ### 安装服务器
 
 ```bash
-cargo install push-all-server
+cargo install push_all_server
 ```
 
 ## 快速开始
