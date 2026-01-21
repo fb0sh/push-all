@@ -1,0 +1,77 @@
+[2026-01-21 12:58:40] 🚀 Stable push server running on 0.0.0.0:3000
+[2026-01-21 13:03:45] Client connected: token=abc[2026-01-21 13:03:45] Client connected: token=abc
+
+[2026-01-21 13:04:41] Client connected: token=abc[2026-01-21 13:04:41] Client connected: token=abc
+
+[2026-01-21 13:04:45] Client disconnected: token=abc[2026-01-21 13:04:45] Client disconnected: token=abc
+
+[2026-01-21 13:05:24] Client connected: token=abc
+[2026-01-21 13:05:24] Client connected: token=abc
+[2026-01-21 13:05:41] Client disconnected: token=abc[2026-01-21 13:05:41] Client disconnected: token=abc
+
+[2026-01-21 13:06:24] Client disconnected: token=abc[2026-01-21 13:06:24] Client disconnected: token=abc
+
+[2026-01-21 13:06:27] Client connected: token=abc
+[2026-01-21 13:06:27] Client connected: token=abc
+[2026-01-21 13:07:46] Client connected: token=abc
+[2026-01-21 13:07:46] Client connected: token=abc
+[2026-01-21 13:07:57] Client disconnected: token=abc
+[2026-01-21 13:07:57] Client disconnected: token=abc
+[2026-01-21 13:09:46] Client disconnected: token=abc[2026-01-21 13:09:46] Client disconnected: token=abc
+
+[2026-01-21 13:10:13] Client connected: token=abc[2026-01-21 13:10:13] Client connected: token=abc
+
+[2026-01-21 13:10:54] Client connected: token=abc
+[2026-01-21 13:10:54] Client connected: token=abc
+[2026-01-21 13:11:13] Client disconnected: token=abc[2026-01-21 13:11:13] Client disconnected: token=abc
+
+[2026-01-21 13:12:37] Client disconnected: token=abc
+[2026-01-21 13:12:37] Client connected: token=abc
+[2026-01-21 13:12:43] Client connected: token=abc
+[2026-01-21 13:12:54] Client disconnected: token=abc
+[2026-01-21 13:13:00] Client disconnected: token=abc
+[2026-01-21 13:13:00] Push request: pushed_to=abc, payload={"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 13:13:00] Sent to client abc: {"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 13:13:00] Client disconnected: token=abc
+[2026-01-21 13:13:34] Client connected: token=abc
+[2026-01-21 13:13:57] Client connected: token=abc
+[2026-01-21 13:14:04] Client disconnected: token=abc
+[2026-01-21 13:14:04] Client connected: token=abc
+[2026-01-21 13:14:11] Client connected: token=abc
+[2026-01-21 13:14:18] Client connected: token=abc
+[2026-01-21 13:14:27] Client disconnected: token=abc
+[2026-01-21 13:14:34] Client disconnected: token=abc
+[2026-01-21 13:14:41] Client disconnected: token=abc
+[2026-01-21 13:15:35] Client connected: token=abc
+[2026-01-21 13:15:42] Client disconnected: token=abc
+[2026-01-21 13:15:54] Client connected: token=abc
+[2026-01-21 13:16:02] Client connected: token=abc
+[2026-01-21 13:16:18] Client disconnected: token=abc
+[2026-01-21 13:16:22] Client connected: token=abc
+[2026-01-21 13:16:24] Client disconnected: token=abc
+[2026-01-21 13:16:32] Client disconnected: token=abc
+[2026-01-21 13:16:34] Client connected: token=abc
+[2026-01-21 13:16:46] Client connected: token=abc
+[2026-01-21 13:16:52] Client disconnected: token=abc
+[2026-01-21 13:16:53] Client connected: token=abc
+[2026-01-21 13:17:01] Client connected: token=abc
+[2026-01-21 13:17:23] Client disconnected: token=abc
+[2026-01-21 13:17:27] Client connected: token=abc
+[2026-01-21 13:17:31] Client disconnected: token=abc
+[2026-01-21 13:17:34] Client disconnected: token=abc
+[2026-01-21 13:17:46] Client disconnected: token=abc
+[2026-01-21 13:17:51] Client disconnected: token=abc
+[2026-01-21 13:18:19] Client connected: token=abc
+[2026-01-21 13:18:54] Client connected: token=abc
+[2026-01-21 13:20:37] Client disconnected: token=abc
+[2026-01-21 13:27:10] Client connected: token=abc
+[2026-01-21 13:27:19] Client disconnected: token=abc
+[2026-01-21 13:28:29] Client disconnected: token=abc
+[2026-01-21 13:28:29] Client connected: token=abc
+[2026-01-21 13:31:21] Client connected: token=abc
+[2026-01-21 13:31:29] Client disconnected: token=abc
+[2026-01-21 13:31:29] Push request: pushed_to=abc, payload={"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 13:31:29] Sent to client abc: {"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 13:31:47] Push request: pushed_to=abc, payload={"pusher":"b0sh","msg":"hello","type":"info","level":"info","date":"2026年 1月21日 星期三 13时31分47秒 CST"}
+[2026-01-21 13:31:47] Sent to client abc: {"pusher":"b0sh","msg":"hello","type":"info","level":"info","date":"2026年 1月21日 星期三 13时31分47秒 CST"}
+[2026-01-21 13:51:21] Client disconnected: token=abc

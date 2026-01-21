@@ -1,0 +1,3 @@
+[workspace]
+members = ["push-all-server","push-all-display/src-tauri"]
+resolver = "2"
