@@ -1,0 +1,6 @@
+/src/main/java/com/fb0sh/push_all_display/generated
+/src/main/jniLibs/**/*.so
+/src/main/assets/tauri.conf.json
+/tauri.build.gradle.kts
+/proguard-tauri.pro
+/tauri.properties

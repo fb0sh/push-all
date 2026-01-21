@@ -18,7 +18,7 @@ import {
   PushPayload,
 } from "./db";
 import { useState, useRef, useEffect } from "react";
-import { useInfiniteScroll, useDebounce } from "ahooks";
+import { useInfiniteScroll, useDebounce, useScroll } from "ahooks"; // 1. 引入 useScroll
 import { formatTitle, sendPushPayload, getPermissionGranted } from "./utils";
 import { getPushWs, getToken, setPushWs, setToken } from "./store";
 import WebSocket from "@tauri-apps/plugin-websocket";
@@ -50,6 +50,9 @@ interface Result {
 function App() {
   const containerRef = useRef<HTMLDivElement>(null);
 
+  // 2. 使用 useScroll 监听 ref 的滚动状态
+  const scroll = useScroll(containerRef);
+
   const [keyword, setKeyword] = useState("");
   const debouncedKeyword = useDebounce(keyword, { wait: 500 });
 
@@ -74,6 +77,7 @@ function App() {
       return {
         ...prevData,
         list: [payload, ...prevData.list],
+        // 修正总数逻辑：取当前列表长度和 total 的最大值 + 1
         total: Math.max(prevData.total || 0, prevData.list.length) + 1,
       };
     });
@@ -96,6 +100,7 @@ function App() {
       console.error(e);
     }
 
+    // 核心判定：只要返回条数等于 limit，就认为还有下一页
     const hasMore = newMessages.length === limit;
 
     return {
@@ -153,13 +158,11 @@ function App() {
     }
   };
 
-  // 每次 token 或 pushWs 改变后尝试连接
   useEffect(() => {
     if (!token || !pushWs) return;
     connectWebSocket(pushWs, token);
   }, [token, pushWs]);
 
-  // 初始化 token / url
   useEffect(() => {
     (async () => {
       await getPermissionGranted();
@@ -170,7 +173,6 @@ function App() {
     })();
   }, []);
 
-  // 应用退出断开
   useEffect(() => {
     const cleanup = listen("tauri://close-requested", async () => {
       if (ws) await ws.disconnect();
@@ -181,13 +183,17 @@ function App() {
     };
   }, [ws]);
 
-  const showBackTop = (containerRef.current?.scrollTop ?? 0) > 300;
+  // 3. 使用 useScroll 的返回值来判断显示
+  const showBackTop = (scroll?.top ?? 0) > 300;
 
   return (
-    <div className="flex flex-col h-[calc(100vh-1px)] bg-transparent p-2">
-      <div ref={containerRef} className="flex-1  flex flex-col gap-2 p-0.5">
-        {/* WS 状态显示 */}
-
+    // 4. 外层 relative 用于定位悬浮按钮，h-svh 固定高度
+    <div className="flex flex-col h-svh bg-transparent p-2 relative">
+      <div
+        ref={containerRef}
+        // 5. 关键：overflow-y-auto 确保容器内部滚动
+        className="flex-1 flex flex-col gap-2 p-0.5 overflow-y-auto"
+      >
         <Details {...getDetailsProps()} className="w-full">
           <Button as="summary">View Token</Button>
           <FormControl>
@@ -229,6 +235,7 @@ function App() {
               variant="danger"
               onClick={async () => {
                 await clearMessages();
+                // 6. 清空逻辑：列表置空，总数置 0
                 mutate((_prevData) => {
                   return {
                     list: [],
