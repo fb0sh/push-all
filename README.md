@@ -31,6 +31,14 @@ push-all/
 └── Cargo.toml           # Rust 工作空间配置
 ```
 
+## 安装
+
+### 安装服务器
+
+```bash
+cargo install push-all-server
+```
+
 ## 快速开始
 
 ### 1. 启动服务器
