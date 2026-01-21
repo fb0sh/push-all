@@ -11,6 +11,12 @@
 - 📨 支持多种消息级别样式
 - 🎨 基于 Primer Design System 的现代化 UI
 
+<img width="1212" height="673" alt="image" src="https://github.com/user-attachments/assets/93260040-3160-44ee-87f0-3d46eb39ef80" />
+
+
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/90b1166f-fedd-4964-8cb1-760eaf7022e9" />
+
+
 ## 项目结构
 
 ```
