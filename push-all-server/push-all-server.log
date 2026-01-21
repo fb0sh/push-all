@@ -75,3 +75,14 @@
 [2026-01-21 13:31:47] Push request: pushed_to=abc, payload={"pusher":"b0sh","msg":"hello","type":"info","level":"info","date":"2026年 1月21日 星期三 13时31分47秒 CST"}
 [2026-01-21 13:31:47] Sent to client abc: {"pusher":"b0sh","msg":"hello","type":"info","level":"info","date":"2026年 1月21日 星期三 13时31分47秒 CST"}
 [2026-01-21 13:51:21] Client disconnected: token=abc
+[2026-01-21 14:08:38] 🚀 Stable push server running on 0.0.0.0:3000
+[2026-01-21 14:08:49] Client connected: token=abc
+[2026-01-21 14:09:01] Push request: pushed_to=abc, payload={"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 14:09:01] Sent to client abc: {"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 14:09:12] Push request: pushed_to=abc, payload={"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 14:09:12] Sent to client abc: {"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 14:09:44] Push request: pushed_to=abc, payload={"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 14:09:44] Sent to client abc: {"pusher":null,"msg":"123","type":null,"level":null,"date":null}
+[2026-01-21 14:09:53] Push request: pushed_to=abc, payload={"pusher":"b0sh","msg":"hello","type":"info","level":"info","date":"2026年 1月21日 星期三 14时09分53秒 CST"}
+[2026-01-21 14:09:53] Sent to client abc: {"pusher":"b0sh","msg":"hello","type":"info","level":"info","date":"2026年 1月21日 星期三 14时09分53秒 CST"}
+[2026-01-21 14:10:35] Client disconnected: token=abc

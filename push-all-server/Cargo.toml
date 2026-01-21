@@ -1,12 +1,19 @@
 [package]
 name = "push_all_server"
+authors = ["fb0sh <fb0sh@outlook.com>"]
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+description = "A  push all server for push all clients."
 
 [dependencies]
-axum = {version="0.7", features=["ws"]}
+axum = { version = "0.7", features = ["ws"] }
 tokio = { version = "1", features = ["full"] }
 futures = "0.3"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 chrono = "0.4"
+
+[[bin]]
+name = "push-all-server"
+path = "src/main.rs"
